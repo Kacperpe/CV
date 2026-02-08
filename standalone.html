@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Twoje Imię</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            padding: 60px 40px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            border-bottom: 1px solid #333;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .profile-section {
+            flex: 1;
+        }
+        
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            color: #888;
+            font-weight: 300;
+        }
+        
+        .accent {
+            color: #6b9bd1;
+        }
+        
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6b9bd1, #e8662f);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 72px;
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #111;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #222;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav a {
+            color: #888;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            color: #6b9bd1;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+        
+        section {
+            margin-bottom: 80px;
+        }
+        
+        h2 {
+            font-size: 36px;
+            color: #ffffff;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #6b9bd1, #e8662f);
+        }
+        
+        /* Contact Info */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .contact-item {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #222;
+            transition: all 0.3s;
+        }
+        
+        .contact-item:hover {
+            border-color: #6b9bd1;
+            transform: translateY(-2px);
+        }
+        
+        .contact-item strong {
+            color: #6b9bd1;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        /* Experience & Education */
+        .timeline-item {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #6b9bd1;
+            transition: all 0.3s;
+        }
+        
+        .timeline-item:hover {
+            background-color: #222;
+            transform: translateX(5px);
+        }
+        
+        .timeline-item h3 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-meta {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .timeline-meta .company {
+            color: #6b9bd1;
+            font-weight: 600;
+        }
+        
+        .timeline-item p {
+            color: #ccc;
+            line-height: 1.8;
+        }
+        
+        .timeline-item ul {
+            margin-top: 15px;
+            margin-left: 20px;
+            color: #ccc;
+        }
+        
+        .timeline-item li {
+            margin-bottom: 8px;
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-category {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #222;
+        }
+        
+        .skill-category h3 {
+            color: #6b9bd1;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            border: 1px solid #333;
+            transition: all 0.3s;
+        }
+        
+        .skill-tag:hover {
+            border-color: #6b9bd1;
+            background-color: #1a1a1a;
+        }
+        
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #222;
+            transition: all 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #6b9bd1;
+            box-shadow: 0 10px 30px rgba(107, 155, 209, 0.1);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+        }
+        
+        .project-content {
+            padding: 25px;
+        }
+        
+        .project-card h3 {
+            color: #ffffff;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        
+        .project-card p {
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .tech-badge {
+            background-color: #0a0a0a;
+            color: #6b9bd1;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            border: 1px solid #333;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid #222;
+            color: #666;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+            
+            h1 {
+                font-size: 40px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .container {
+                padding: 40px 20px;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="profile-section">
+                <h1>Twoje <span class="accent">Imię</span></h1>
+                <p class="subtitle">Web Developer & Designer</p>
+            </div>
+            <div class="profile-photo">KN</div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#experience">Doświadczenie</a></li>
+            <li><a href="#education">Edukacja</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>O mnie</h2>
+            <p style="font-size: 18px; color: #ccc; line-height: 1.8;">
+                Jestem pasjonatem technologii z doświadczeniem w tworzeniu nowoczesnych aplikacji webowych. 
+                Specjalizuję się w front-end development, ale chętnie pracuję również z technologiami backend. 
+                Uwielbiam tworzyć intuicyjne interfejsy użytkownika i rozwiązywać złożone problemy techniczne.
+            </p>
+        </section>
+        
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    twoj.email@example.com
+                </div>
+                <div class="contact-item">
+                    <strong>Telefon</strong>
+                    +48 123 456 789
+                </div>
+                <div class="contact-item">
+                    <strong>Lokalizacja</strong>
+                    Warszawa, Polska
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn</strong>
+                    linkedin.com/in/twojprofil
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2>Doświadczenie zawodowe</h2>
+            
+            <div class="timeline-item">
+                <h3>Senior Frontend Developer</h3>
+                <div class="timeline-meta">
+                    <span class="company">Tech Company</span> • 2023 - obecnie
+                </div>
+                <p>Prowadzenie projektów front-endowych, mentoring juniorów, optymalizacja wydajności aplikacji.</p>
+                <ul>
+                    <li>Rozwój aplikacji React z TypeScript</li>
+                    <li>Implementacja responsive design i accessibility</li>
+                    <li>Współpraca z zespołem UX/UI</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Frontend Developer</h3>
+                <div class="timeline-meta">
+                    <span class="company">Digital Agency</span> • 2021 - 2023
+                </div>
+                <p>Tworzenie stron internetowych i aplikacji webowych dla klientów z różnych branż.</p>
+                <ul>
+                    <li>Budowanie responsywnych stron w React i Vue.js</li>
+                    <li>Integracja z REST API i GraphQL</li>
+                    <li>Optymalizacja SEO i performance</li>
+                </ul>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Junior Web Developer</h3>
+                <div class="timeline-meta">
+                    <span class="company">Startup XYZ</span> • 2020 - 2021
+                </div>
+                <p>Praca nad projektami webowymi, nauka best practices, rozwój umiejętności programistycznych.</p>
+                <ul>
+                    <li>HTML, CSS, JavaScript - podstawy</li>
+                    <li>Nauka frameworków i bibliotek</li>
+                    <li>Współpraca w zespole Agile</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Edukacja</h2>
+            
+            <div class="timeline-item">
+                <h3>Informatyka - Inżynier</h3>
+                <div class="timeline-meta">
+                    <span class="company">Politechnika Warszawska</span> • 2017 - 2021
+                </div>
+                <p>Kierunek: Inżynieria Oprogramowania</p>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Umiejętności</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Sass</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Narzędzia</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Webpack</span>
+                        <span class="skill-tag">Vite</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projekty</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🚀</div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Nowoczesna platforma e-commerce z pełną funkcjonalnością koszyka, płatności i zarządzania produktami.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">💼</div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Responsywna strona portfolio z animacjami i interaktywnymi elementami.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">GSAP</span>
+                            <span class="tech-badge">Sass</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">📱</div>
+                    <div class="project-content">
+                        <h3>Mobile App Dashboard</h3>
+                        <p>Dashboard do zarządzania aplikacją mobilną z analityką i statystykami.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Twoje Imię. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
