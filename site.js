@@ -3,10 +3,56 @@
     const hero = document.getElementById("hero");
     const heroContent = document.querySelector(".hero-content");
 
+    setupMobileMenu();
     setupIndexHero(body, hero, heroContent);
     setupRevealAnimations();
     setupReturnToIndexFlag();
 });
+
+function setupMobileMenu() {
+    const body = document.body;
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("header nav");
+
+    if (!menuToggle || !nav) {
+        return;
+    }
+
+    const isMobile = () => window.matchMedia("(max-width: 640px)").matches;
+
+    const closeMenu = () => {
+        body.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+    };
+
+    const toggleMenu = () => {
+        const willOpen = !body.classList.contains("menu-open");
+        body.classList.toggle("menu-open", willOpen);
+        menuToggle.setAttribute("aria-expanded", String(willOpen));
+    };
+
+    menuToggle.addEventListener("click", toggleMenu);
+
+    nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            if (isMobile()) {
+                closeMenu();
+            }
+        });
+    });
+
+    window.addEventListener("resize", () => {
+        if (!isMobile()) {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+    });
+}
 
 function setupIndexHero(body, hero, heroContent) {
     if (!hero || !body.classList.contains("has-hero")) {

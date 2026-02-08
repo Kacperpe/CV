@@ -189,6 +189,9 @@ body.has-hero:not(.hero-passed) header {
     grid-column: 1;
     grid-row: 1;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .profile-section h1 {
@@ -204,6 +207,10 @@ body.has-hero:not(.hero-passed) header {
     color: var(--muted);
     font-weight: 500;
     font-size: 0.98rem;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .profile-photo {
@@ -523,22 +530,101 @@ footer {
         margin-bottom: 24px;
     }
 
-    .profile-photo {
-        width: 116px;
-        height: 116px;
+    header {
+        min-height: auto;
     }
 
-    .container {
-        padding-top: 40px;
+    .header-content {
+        width: 100%;
+        padding: 16px 14px 14px;
+        gap: 10px;
+        justify-items: stretch;
+    }
+
+    .profile-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 4px 10px;
+        text-align: left;
+    }
+
+    .profile-section h1 {
+        font-size: 1.45rem;
+        margin: 0;
+    }
+
+    .subtitle {
+        font-size: 0.84rem;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        border: 1px solid rgba(15, 95, 134, 0.38);
+        border-radius: 999px;
+        padding: 8px 14px;
+        background: rgba(255, 255, 255, 0.74);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .profile-photo {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        transform: translateY(-6px);
+        transition: max-height 0.24s ease, opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    body.menu-open nav {
+        max-height: 360px;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
     }
 
     nav ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
         gap: 8px;
     }
 
     nav a {
+        display: block;
         width: 100%;
-        text-align: center;
+        text-align: left;
+        border-radius: 12px;
+        padding: 10px 12px;
+        background: rgba(255, 255, 255, 0.66);
+    }
+
+    .container {
+        padding: 34px 14px 56px;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    .contact-grid,
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     .timeline-item,
