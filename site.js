@@ -301,15 +301,24 @@ function setupIndexHero(body, hero, heroContent) {
     }
 
     const returningToIndex = sessionStorage.getItem("returningToIndex") === "true";
+    const returningTarget = sessionStorage.getItem("returningToIndexTarget");
+    const hashTarget = window.location.hash ? window.location.hash.replace("#", "") : "";
 
-    if (returningToIndex) {
-        const aboutSection = document.getElementById("about");
-        if (aboutSection) {
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
             requestAnimationFrame(() => {
-                aboutSection.scrollIntoView({ behavior: "auto", block: "start" });
+                section.scrollIntoView({ behavior: "auto", block: "start" });
             });
         }
+    };
+
+    if (returningToIndex) {
+        scrollToSection(returningTarget || "about");
         sessionStorage.removeItem("returningToIndex");
+        sessionStorage.removeItem("returningToIndexTarget");
+    } else if (hashTarget) {
+        scrollToSection(hashTarget);
     } else {
         window.scrollTo({ top: 0, behavior: "auto" });
     }
@@ -344,6 +353,10 @@ function setupIndexHero(body, hero, heroContent) {
 }
 
 function setupReturnToIndexFlag() {
+    if (document.body.dataset.page !== "index") {
+        return;
+    }
+
     const navLinks = document.querySelectorAll("nav a");
     if (!navLinks.length) {
         return;
@@ -352,8 +365,21 @@ function setupReturnToIndexFlag() {
     navLinks.forEach((link) => {
         link.addEventListener("click", () => {
             const href = link.getAttribute("href");
-            if (href && href !== "index.html") {
+
+            if (!href || href.startsWith("#")) {
+                return;
+            }
+
+            if (href.startsWith("index.html#")) {
+                const target = href.split("#")[1] || "about";
                 sessionStorage.setItem("returningToIndex", "true");
+                sessionStorage.setItem("returningToIndexTarget", target);
+                return;
+            }
+
+            if (href !== "index.html") {
+                sessionStorage.setItem("returningToIndex", "true");
+                sessionStorage.setItem("returningToIndexTarget", "about");
             }
         });
     });
