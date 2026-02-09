@@ -1,32 +1,38 @@
 ﻿<!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Edukacja</title>
+    <title>CV - Education</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="education">
     <header>
         <div class="header-content">
             <div class="profile-section">
                 <h1>Kacper <span class="accent">Pasi&#324;ski</span></h1>
-                <p class="subtitle">Environmental Engineer</p>
-                <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
-                    Menu
-                </button>
+                <p class="subtitle" data-i18n="profile.role">Environmental Engineer</p>
+                <div class="profile-controls">
+                    <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language to Polish">
+                        <span class="lang-flag" aria-hidden="true">🇵🇱</span>
+                        <span class="lang-code">PL</span>
+                    </button>
+                    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-i18n="common.menu">
+                        Menu
+                    </button>
+                </div>
             </div>
 
-            <nav id="site-nav" aria-label="Nawigacja g&#322;&#243;wna">
+            <nav id="site-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html">O mnie</a></li>
-                    <li><a href="experience.html">Do&#347;wiadczenie</a></li>
-                    <li><a href="education.html" class="active" aria-current="page">Edukacja</a></li>
-                    <li><a href="skills.html">Umiej&#281;tno&#347;ci</a></li>
-                    <li><a href="projects.html">Projekty</a></li>
+                    <li><a href="index.html" data-i18n="nav.about">About</a></li>
+                    <li><a href="experience.html" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="education.html" class="active" aria-current="page" data-i18n="nav.education">Education</a></li>
+                    <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
                 </ul>
             </nav>
 
@@ -38,32 +44,32 @@
 
     <main class="container">
         <section id="education">
-            <h2>Edukacja</h2>
+            <h2 data-i18n="edu.heading">Education</h2>
 
             <article class="timeline-item">
-                <h3>In&#380;ynieria &#347;rodowiska - In&#380;ynier</h3>
+                <h3 data-i18n="edu.item1.title">Environmental Engineering - BEng</h3>
                 <div class="timeline-meta">
-                    <span class="company">Politechnika Warszawska</span> • 2017 - 2021
+                    <span class="company" data-i18n="edu.item1.company">Warsaw University of Technology</span> • <span data-i18n="edu.item1.period">2017 - 2021</span>
                 </div>
-                <p>Specjalizacja: technologie ochrony &#347;rodowiska, gospodarka wodno-&#347;ciekowa, modelowanie proces&#243;w.</p>
+                <p data-i18n="edu.item1.desc">Specialization: environmental protection technologies, water and wastewater management, process modeling.</p>
             </article>
 
             <article class="timeline-item">
-                <h3>Kursy i certyfikacje</h3>
+                <h3 data-i18n="edu.item2.title">Courses and Certifications</h3>
                 <div class="timeline-meta">
-                    <span class="company">Szkolenia bran&#380;owe</span> • 2021 - 2025
+                    <span class="company" data-i18n="edu.item2.company">Industry training</span> • <span data-i18n="edu.item2.period">2021 - 2025</span>
                 </div>
                 <ul>
-                    <li>Audytor wewn&#281;trzny ISO 14001</li>
-                    <li>Analiza danych w Excel i Power BI</li>
-                    <li>Podstawy GIS w analizie &#347;rodowiskowej</li>
+                    <li data-i18n="edu.item2.li1">ISO 14001 internal auditor</li>
+                    <li data-i18n="edu.item2.li2">Data analysis in Excel and Power BI</li>
+                    <li data-i18n="edu.item2.li3">GIS fundamentals in environmental analysis</li>
                 </ul>
             </article>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Kacper Pasi&#324;ski. Wszystkie prawa zastrze&#380;one.</p>
+        <p data-i18n="common.footer">&copy; 2026 Kacper Pasi&#324;ski. All rights reserved.</p>
     </footer>
 
     <script src="site.js"></script>

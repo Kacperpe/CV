@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="has-hero">
-    <section class="hero" id="hero" aria-label="Powitanie">
+<body class="has-hero" data-page="index">
+    <section class="hero" id="hero" aria-label="Welcome">
         <div class="hero-content">
-            <p class="hero-eyebrow">CV online</p>
+            <p class="hero-eyebrow" data-i18n="hero.eyebrow">Online CV</p>
             <h1 class="hero-title">Kacper Pasi&#324;ski</h1>
-            <p class="hero-subtitle">In&#380;ynier &#347;rodowiska i specjalista ds. zr&#243;wnowa&#380;onego rozwoju</p>
-            <div class="scroll-indicator" aria-hidden="true">Scroll</div>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Environmental Engineer and sustainability specialist</p>
+            <div class="scroll-indicator" aria-hidden="true" data-i18n="hero.scroll">Scroll</div>
         </div>
     </section>
 
@@ -23,19 +23,25 @@
         <div class="header-content">
             <div class="profile-section">
                 <h1>Kacper <span class="accent">Pasi&#324;ski</span></h1>
-                <p class="subtitle">Environmental Engineer</p>
-                <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
-                    Menu
-                </button>
+                <p class="subtitle" data-i18n="profile.role">Environmental Engineer</p>
+                <div class="profile-controls">
+                    <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language to Polish">
+                        <span class="lang-flag" aria-hidden="true">🇵🇱</span>
+                        <span class="lang-code">PL</span>
+                    </button>
+                    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-i18n="common.menu">
+                        Menu
+                    </button>
+                </div>
             </div>
 
-            <nav id="site-nav" aria-label="Nawigacja g&#322;&#243;wna">
+            <nav id="site-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html" class="active" aria-current="page">O mnie</a></li>
-                    <li><a href="experience.html">Do&#347;wiadczenie</a></li>
-                    <li><a href="education.html">Edukacja</a></li>
-                    <li><a href="skills.html">Umiej&#281;tno&#347;ci</a></li>
-                    <li><a href="projects.html">Projekty</a></li>
+                    <li><a href="index.html" class="active" aria-current="page" data-i18n="nav.about">About</a></li>
+                    <li><a href="experience.html" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="education.html" data-i18n="nav.education">Education</a></li>
+                    <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
                 </ul>
             </nav>
 
@@ -47,27 +53,27 @@
 
     <main class="container">
         <section id="about">
-            <h2>O mnie</h2>
-            <p class="lead">
-                Wspieram firmy i instytucje w projektach zwi&#261;zanych z efektywno&#347;ci&#261; energetyczn&#261;,
-                gospodark&#261; odpadami i analiz&#261; wp&#322;ywu na &#347;rodowisko. &#321;&#261;cz&#281; podej&#347;cie
-                in&#380;ynierskie z czyteln&#261; komunikacj&#261; danych, aby decyzje projektowe by&#322;y szybsze i lepiej uzasadnione.
+            <h2 data-i18n="index.about.heading">About</h2>
+            <p class="lead" data-i18n="index.about.lead">
+                I support companies and institutions in projects focused on energy efficiency, waste management,
+                and environmental impact analysis. I combine engineering precision with clear data communication
+                so project decisions are faster and better justified.
             </p>
             <div class="contact-grid">
                 <a class="contact-item" href="mailto:twoj.email@example.com">
-                    <strong>Email</strong>
+                    <strong data-i18n="index.contact.email">Email</strong>
                     twoj.email@example.com
                 </a>
                 <a class="contact-item" href="tel:+48123456789">
-                    <strong>Telefon</strong>
+                    <strong data-i18n="index.contact.phone">Phone</strong>
                     +48 123 456 789
                 </a>
                 <div class="contact-item">
-                    <strong>Lokalizacja</strong>
-                    Warszawa, Polska
+                    <strong data-i18n="index.contact.location">Location</strong>
+                    <span data-i18n="index.contact.location_value">Warsaw, Poland</span>
                 </div>
                 <a class="contact-item" href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-                    <strong>LinkedIn</strong>
+                    <strong data-i18n="index.contact.linkedin">LinkedIn</strong>
                     linkedin.com/in/twojprofil
                 </a>
             </div>
@@ -75,7 +81,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Kacper Pasi&#324;ski. Wszystkie prawa zastrze&#380;one.</p>
+        <p data-i18n="common.footer">&copy; 2026 Kacper Pasi&#324;ski. All rights reserved.</p>
     </footer>
 
     <script src="site.js"></script>

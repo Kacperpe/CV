@@ -1,32 +1,38 @@
 ﻿<!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Projekty</title>
+    <title>CV - Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="projects">
     <header>
         <div class="header-content">
             <div class="profile-section">
                 <h1>Kacper <span class="accent">Pasi&#324;ski</span></h1>
-                <p class="subtitle">Environmental Engineer</p>
-                <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
-                    Menu
-                </button>
+                <p class="subtitle" data-i18n="profile.role">Environmental Engineer</p>
+                <div class="profile-controls">
+                    <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language to Polish">
+                        <span class="lang-flag" aria-hidden="true">🇵🇱</span>
+                        <span class="lang-code">PL</span>
+                    </button>
+                    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-i18n="common.menu">
+                        Menu
+                    </button>
+                </div>
             </div>
 
-            <nav id="site-nav" aria-label="Nawigacja g&#322;&#243;wna">
+            <nav id="site-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html">O mnie</a></li>
-                    <li><a href="experience.html">Do&#347;wiadczenie</a></li>
-                    <li><a href="education.html">Edukacja</a></li>
-                    <li><a href="skills.html">Umiej&#281;tno&#347;ci</a></li>
-                    <li><a href="projects.html" class="active" aria-current="page">Projekty</a></li>
+                    <li><a href="index.html" data-i18n="nav.about">About</a></li>
+                    <li><a href="experience.html" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="education.html" data-i18n="nav.education">Education</a></li>
+                    <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="projects.html" class="active" aria-current="page" data-i18n="nav.projects">Projects</a></li>
                 </ul>
             </nav>
 
@@ -38,18 +44,18 @@
 
     <main class="container">
         <section id="projects">
-            <h2>Wybrane projekty</h2>
+            <h2 data-i18n="projects.heading">Selected Projects</h2>
 
             <div class="projects-grid">
                 <article class="project-card">
                     <div class="project-image">01</div>
                     <div class="project-content">
-                        <h3>Audyt &#347;rodowiskowy zak&#322;adu</h3>
-                        <p>Kompleksowy przegl&#261;d obszar&#243;w emisyjnych i plan dzia&#322;a&#324; redukuj&#261;cych &#347;lad &#347;rodowiskowy.</p>
+                        <h3 data-i18n="projects.item1.title">Environmental Audit for an Industrial Plant</h3>
+                        <p data-i18n="projects.item1.desc">A comprehensive review of emission areas and an action plan to reduce environmental footprint.</p>
                         <div class="project-tech">
                             <span class="tech-badge">ISO 14001</span>
                             <span class="tech-badge">EHS</span>
-                            <span class="tech-badge">Raportowanie</span>
+                            <span class="tech-badge" data-i18n="projects.item1.badge3">Reporting</span>
                         </div>
                     </div>
                 </article>
@@ -57,8 +63,8 @@
                 <article class="project-card">
                     <div class="project-image">02</div>
                     <div class="project-content">
-                        <h3>Optymalizacja zu&#380;ycia energii</h3>
-                        <p>Projekt analityczny oparty o dane pomiarowe, zako&#324;czony wdro&#380;eniem usprawnie&#324; procesowych.</p>
+                        <h3 data-i18n="projects.item2.title">Energy Consumption Optimization</h3>
+                        <p data-i18n="projects.item2.desc">An analytics project based on measurement data, completed with implemented process improvements.</p>
                         <div class="project-tech">
                             <span class="tech-badge">Power BI</span>
                             <span class="tech-badge">Excel</span>
@@ -70,12 +76,12 @@
                 <article class="project-card">
                     <div class="project-image">03</div>
                     <div class="project-content">
-                        <h3>Model gospodarki odpadami</h3>
-                        <p>Opracowanie modelu segregacji i przekazywania odpad&#243;w, wraz z dokumentacj&#261; i harmonogramem wdro&#380;enia.</p>
+                        <h3 data-i18n="projects.item3.title">Waste Management Model</h3>
+                        <p data-i18n="projects.item3.desc">Development of a segregation and transfer model, including documentation and implementation timeline.</p>
                         <div class="project-tech">
                             <span class="tech-badge">BDO</span>
                             <span class="tech-badge">Compliance</span>
-                            <span class="tech-badge">Planowanie</span>
+                            <span class="tech-badge" data-i18n="projects.item3.badge3">Planning</span>
                         </div>
                     </div>
                 </article>
@@ -84,7 +90,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Kacper Pasi&#324;ski. Wszystkie prawa zastrze&#380;one.</p>
+        <p data-i18n="common.footer">&copy; 2026 Kacper Pasi&#324;ski. All rights reserved.</p>
     </footer>
 
     <script src="site.js"></script>

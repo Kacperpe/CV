@@ -1,32 +1,38 @@
 ﻿<!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Do&#347;wiadczenie</title>
+    <title>CV - Experience</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="experience">
     <header>
         <div class="header-content">
             <div class="profile-section">
                 <h1>Kacper <span class="accent">Pasi&#324;ski</span></h1>
-                <p class="subtitle">Environmental Engineer</p>
-                <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
-                    Menu
-                </button>
+                <p class="subtitle" data-i18n="profile.role">Environmental Engineer</p>
+                <div class="profile-controls">
+                    <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language to Polish">
+                        <span class="lang-flag" aria-hidden="true">🇵🇱</span>
+                        <span class="lang-code">PL</span>
+                    </button>
+                    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-i18n="common.menu">
+                        Menu
+                    </button>
+                </div>
             </div>
 
-            <nav id="site-nav" aria-label="Nawigacja g&#322;&#243;wna">
+            <nav id="site-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html">O mnie</a></li>
-                    <li><a href="experience.html" class="active" aria-current="page">Do&#347;wiadczenie</a></li>
-                    <li><a href="education.html">Edukacja</a></li>
-                    <li><a href="skills.html">Umiej&#281;tno&#347;ci</a></li>
-                    <li><a href="projects.html">Projekty</a></li>
+                    <li><a href="index.html" data-i18n="nav.about">About</a></li>
+                    <li><a href="experience.html" class="active" aria-current="page" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="education.html" data-i18n="nav.education">Education</a></li>
+                    <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
                 </ul>
             </nav>
 
@@ -38,51 +44,51 @@
 
     <main class="container">
         <section id="experience">
-            <h2>Do&#347;wiadczenie zawodowe</h2>
+            <h2 data-i18n="exp.heading">Professional Experience</h2>
 
             <article class="timeline-item">
-                <h3>Specjalista ds. Ochrony &#346;rodowiska</h3>
+                <h3 data-i18n="exp.item1.title">Environmental Protection Specialist</h3>
                 <div class="timeline-meta">
-                    <span class="company">EcoConsult</span> • 2023 - obecnie
+                    <span class="company" data-i18n="exp.item1.company">EcoConsult</span> • <span data-i18n="exp.item1.period">2023 - present</span>
                 </div>
-                <p>Prowadzenie projekt&#243;w oceny oddzia&#322;ywania na &#347;rodowisko i wsparcie klient&#243;w przy zgodno&#347;ci z wymaganiami administracyjnymi.</p>
+                <p data-i18n="exp.item1.desc">Leading environmental impact assessment projects and supporting clients in regulatory compliance.</p>
                 <ul>
-                    <li>Przygotowanie dokumentacji &#347;rodowiskowej i raport&#243;w emisyjnych</li>
-                    <li>Koordynacja audyt&#243;w wewn&#281;trznych oraz zalece&#324; pokontrolnych</li>
-                    <li>Wsp&#243;&#322;praca z zespo&#322;ami projektowymi i urz&#281;dami</li>
+                    <li data-i18n="exp.item1.li1">Preparing environmental documentation and emission reports</li>
+                    <li data-i18n="exp.item1.li2">Coordinating internal audits and corrective action plans</li>
+                    <li data-i18n="exp.item1.li3">Working with project teams and public administration</li>
                 </ul>
             </article>
 
             <article class="timeline-item">
-                <h3>In&#380;ynier Procesu</h3>
+                <h3 data-i18n="exp.item2.title">Process Engineer</h3>
                 <div class="timeline-meta">
-                    <span class="company">Zak&#322;ad Produkcyjny XYZ</span> • 2021 - 2023
+                    <span class="company" data-i18n="exp.item2.company">XYZ Manufacturing Plant</span> • <span data-i18n="exp.item2.period">2021 - 2023</span>
                 </div>
-                <p>Optymalizacja proces&#243;w produkcyjnych pod k&#261;tem zu&#380;ycia medi&#243;w i gospodarki odpadami.</p>
+                <p data-i18n="exp.item2.desc">Optimizing production processes with a focus on utility consumption and waste management.</p>
                 <ul>
-                    <li>Wdro&#380;enie planu redukcji zu&#380;ycia energii elektrycznej</li>
-                    <li>Analiza danych produkcyjnych i raportowanie KPI</li>
-                    <li>Standaryzacja procedur operacyjnych w obszarze EHS</li>
+                    <li data-i18n="exp.item2.li1">Implemented an electricity reduction roadmap</li>
+                    <li data-i18n="exp.item2.li2">Analyzed production data and reported KPIs</li>
+                    <li data-i18n="exp.item2.li3">Standardized EHS operational procedures</li>
                 </ul>
             </article>
 
             <article class="timeline-item">
-                <h3>M&#322;odszy Specjalista EHS</h3>
+                <h3 data-i18n="exp.item3.title">Junior EHS Specialist</h3>
                 <div class="timeline-meta">
-                    <span class="company">Green Industry</span> • 2020 - 2021
+                    <span class="company" data-i18n="exp.item3.company">Green Industry</span> • <span data-i18n="exp.item3.period">2020 - 2021</span>
                 </div>
-                <p>Wsparcie zespo&#322;u BHP i ochrony &#347;rodowiska w codziennych dzia&#322;aniach operacyjnych.</p>
+                <p data-i18n="exp.item3.desc">Supporting occupational safety and environmental teams in daily operations.</p>
                 <ul>
-                    <li>Ewidencja odpad&#243;w i przygotowanie danych do sprawozda&#324;</li>
-                    <li>Kontrola zgodno&#347;ci z procedurami &#347;rodowiskowymi</li>
-                    <li>Udzia&#322; w szkoleniach i przegl&#261;dach stanowisk pracy</li>
+                    <li data-i18n="exp.item3.li1">Maintained waste records and reporting data</li>
+                    <li data-i18n="exp.item3.li2">Monitored compliance with environmental procedures</li>
+                    <li data-i18n="exp.item3.li3">Participated in training sessions and workplace inspections</li>
                 </ul>
             </article>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Kacper Pasi&#324;ski. Wszystkie prawa zastrze&#380;one.</p>
+        <p data-i18n="common.footer">&copy; 2026 Kacper Pasi&#324;ski. All rights reserved.</p>
     </footer>
 
     <script src="site.js"></script>

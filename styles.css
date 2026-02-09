@@ -209,8 +209,48 @@ body.has-hero:not(.hero-passed) header {
     font-size: 0.98rem;
 }
 
+.profile-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.lang-toggle,
+.menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(49, 71, 58, 0.28);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.74);
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.lang-toggle {
+    gap: 6px;
+    padding: 7px 12px;
+}
+
+.lang-toggle:hover,
+.menu-toggle:hover {
+    border-color: rgba(49, 71, 58, 0.52);
+    background: #ffffff;
+}
+
+.lang-flag {
+    font-size: 0.95rem;
+}
+
 .menu-toggle {
     display: none;
+    padding: 7px 12px;
 }
 
 .profile-photo {
@@ -515,6 +555,10 @@ footer {
     nav ul {
         justify-content: center;
     }
+
+    .profile-controls {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 640px) {
@@ -543,10 +587,9 @@ footer {
 
     .profile-section {
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr auto;
-        align-items: center;
-        gap: 4px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
         text-align: left;
     }
 
@@ -559,22 +602,20 @@ footer {
         font-size: 0.84rem;
     }
 
+    .profile-controls {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 6px;
+    }
+
+    .lang-toggle,
+    .menu-toggle {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+    }
+
     .menu-toggle {
         display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        grid-column: 2;
-        grid-row: 1 / span 2;
-        border: 1px solid rgba(49, 71, 58, 0.38);
-        border-radius: 999px;
-        padding: 8px 14px;
-        background: rgba(255, 255, 255, 0.74);
-        color: var(--accent);
-        font-size: 0.82rem;
-        font-weight: 800;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        cursor: pointer;
     }
 
     .profile-photo {
