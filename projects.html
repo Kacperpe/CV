@@ -1,99 +1,185 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV - Projects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body data-page="projects">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="projects">
     <header>
-        <div class="header-content">
-            <div class="profile-section">
-                <h1>Kacper <span class="accent">Pasi&#324;ski</span></h1>
-                <p class="subtitle" data-i18n="profile.role">Environmental Engineer</p>
-                <div class="profile-controls">
-                    <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language to Polish">
-                        <span class="lang-flag" aria-hidden="true">🇵🇱</span>
-                        <span class="lang-code">PL</span>
-                    </button>
-                    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-i18n="common.menu">
-                        Menu
-                    </button>
-                </div>
-            </div>
-
-            <nav id="site-nav" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html" data-i18n="nav.about">About</a></li>
-                    <li><a href="index.html#experience" data-i18n="nav.experience">Experience</a></li>
-                    <li><a href="index.html#education" data-i18n="nav.education">Education</a></li>
-                    <li><a href="index.html#skills" data-i18n="nav.skills">Skills</a></li>
-                    <li><a href="projects.html" class="active" aria-current="page" data-i18n="nav.projects">Projects</a></li>
-                </ul>
-            </nav>
-
-            <div class="profile-photo">
-                <img src="kacperZdjecie.jpg" alt="Kacper Pasi&#324;ski">
-            </div>
+      <div class="header-content">
+        <div class="profile-section">
+          <h1>Kacper <span class="accent">Pasi&#324;ski</span></h1>
+          <p class="subtitle" data-i18n="profile.role">
+            Environmental Engineer
+          </p>
+          <div class="profile-controls">
+            <button
+              class="lang-toggle"
+              type="button"
+              data-lang-toggle
+              aria-label="Switch language to Polish"
+            >
+              <span class="lang-flag" aria-hidden="true">PL</span>
+              <span class="lang-code">PL</span>
+            </button>
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-controls="site-nav"
+              aria-expanded="false"
+              data-i18n="common.menu"
+            >
+              Menu
+            </button>
+          </div>
         </div>
+
+        <nav id="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html" data-i18n="nav.about">About</a></li>
+            <li>
+              <a href="index.html#experience" data-i18n="nav.experience"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a href="index.html#education" data-i18n="nav.education"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="active"
+                aria-current="page"
+                data-i18n="nav.projects"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="profile-photo">
+          <img src="kacperZdjecie.jpg" alt="Kacper Pasi&#324;ski" />
+        </div>
+      </div>
     </header>
 
     <main class="container">
-        <section id="projects">
-            <h2 data-i18n="projects.heading">Selected Projects</h2>
+      <section id="projects">
+        <h2 data-i18n="projects.heading">Selected Projects</h2>
 
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-image">01</div>
-                    <div class="project-content">
-                        <h3 data-i18n="projects.item1.title">Environmental Audit for an Industrial Plant</h3>
-                        <p data-i18n="projects.item1.desc">A comprehensive review of emission areas and an action plan to reduce environmental footprint.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">ISO 14001</span>
-                            <span class="tech-badge">EHS</span>
-                            <span class="tech-badge" data-i18n="projects.item1.badge3">Reporting</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">02</div>
-                    <div class="project-content">
-                        <h3 data-i18n="projects.item2.title">Energy Consumption Optimization</h3>
-                        <p data-i18n="projects.item2.desc">An analytics project based on measurement data, completed with implemented process improvements.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Power BI</span>
-                            <span class="tech-badge">Excel</span>
-                            <span class="tech-badge">KPI</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">03</div>
-                    <div class="project-content">
-                        <h3 data-i18n="projects.item3.title">Waste Management Model</h3>
-                        <p data-i18n="projects.item3.desc">Development of a segregation and transfer model, including documentation and implementation timeline.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">BDO</span>
-                            <span class="tech-badge">Compliance</span>
-                            <span class="tech-badge" data-i18n="projects.item3.badge3">Planning</span>
-                        </div>
-                    </div>
-                </article>
+        <div class="projects-grid">
+          <article class="project-card project-card--wide">
+            <div class="project-image">01</div>
+            <div class="project-content">
+              <h3 data-i18n="projects.item1.title">
+                Environmental Audit for an Industrial Plant
+              </h3>
+              <p data-i18n="projects.item1.desc">
+                A comprehensive review of emission areas and an action plan to
+                reduce environmental footprint.
+              </p>
+              <p class="project-impact" data-i18n="projects.item1.impact">
+                Impact: delivered a prioritized roadmap for compliance actions
+                and reporting quality.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">ISO 14001</span>
+                <span class="tech-badge">EHS</span>
+                <span class="tech-badge" data-i18n="projects.item1.badge3"
+                  >Reporting</span
+                >
+              </div>
             </div>
-        </section>
+          </article>
+
+          <article class="project-card project-card--tall">
+            <div class="project-image">02</div>
+            <div class="project-content">
+              <h3 data-i18n="projects.item2.title">
+                Energy Consumption Optimization
+              </h3>
+              <p data-i18n="projects.item2.desc">
+                An analytics project based on measurement data, completed with
+                implemented process improvements.
+              </p>
+              <p class="project-impact" data-i18n="projects.item2.impact">
+                Impact: introduced KPI cadence for utilities and identified the
+                highest-return efficiency measures.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Power BI</span>
+                <span class="tech-badge">Excel</span>
+                <span class="tech-badge">KPI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">03</div>
+            <div class="project-content">
+              <h3 data-i18n="projects.item3.title">Waste Management Model</h3>
+              <p data-i18n="projects.item3.desc">
+                Development of a segregation and transfer model, including
+                documentation and implementation timeline.
+              </p>
+              <p class="project-impact" data-i18n="projects.item3.impact">
+                Impact: improved waste traceability and clarified
+                responsibilities per process stream.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">BDO</span>
+                <span class="tech-badge">Compliance</span>
+                <span class="tech-badge" data-i18n="projects.item3.badge3"
+                  >Planning</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--wide project-card--accent">
+            <div class="project-image">04</div>
+            <div class="project-content">
+              <h3 data-i18n="projects.item4.title">
+                Compliance Reporting Sprint
+              </h3>
+              <p data-i18n="projects.item4.desc">
+                Short-cycle improvement project focused on monthly environmental
+                reporting consistency and turnaround.
+              </p>
+              <p class="project-impact" data-i18n="projects.item4.impact">
+                Impact: reduced report preparation friction by introducing
+                templates and role-based ownership.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Templates</span>
+                <span class="tech-badge">Workflow</span>
+                <span class="tech-badge">QA</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p data-i18n="common.footer">&copy; 2026 Kacper Pasi&#324;ski. All rights reserved.</p>
+      <p data-i18n="common.footer">
+        &copy; 2026 Kacper Pasi&#324;ski. All rights reserved.
+      </p>
     </footer>
 
     <script src="site.js"></script>
-</body>
+  </body>
 </html>
-
