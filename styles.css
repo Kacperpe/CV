@@ -137,10 +137,11 @@ body.has-hero {
 
 .hero-simple {
   display: grid;
-  justify-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  align-items: center;
   align-content: center;
-  gap: 22px;
-  text-align: center;
+  gap: 40px;
+  text-align: left;
 }
 
 .hero-simple .hero-title {
@@ -148,7 +149,8 @@ body.has-hero {
 }
 
 .hero-simple .hero-photo-wrap {
-  width: min(300px, 80vw);
+  width: min(420px, 42vw);
+  justify-self: end;
 }
 
 .hero-layout {
@@ -981,6 +983,18 @@ footer {
     text-align: center;
   }
 
+  .hero-simple {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-simple .hero-photo-wrap {
+    justify-self: center;
+    width: min(320px, 74vw);
+  }
+
   .hero-main {
     max-width: none;
   }
@@ -1056,7 +1070,7 @@ footer {
   }
 
   .hero-simple .hero-photo-wrap {
-    width: min(220px, 78vw);
+    width: min(260px, 80vw);
   }
 
   .hero-title {
