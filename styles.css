@@ -129,7 +129,7 @@ body.has-hero {
 }
 
 .hero-content {
-  width: min(1440px, calc(100% - 40px));
+  width: min(1600px, calc(100% - 40px));
   padding: 24px 0;
   position: relative;
   transition: transform 0.2s ease-out;
@@ -150,8 +150,12 @@ body.has-hero {
 }
 
 .hero-simple .hero-photo-wrap {
-  width: min(680px, 48vw);
+  width: min(820px, 50vw);
   justify-self: end;
+}
+
+.hero-simple .hero-photo-wrap img {
+  opacity: 0.58;
 }
 
 .hero-layout {
