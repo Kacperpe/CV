@@ -129,7 +129,7 @@ body.has-hero {
 }
 
 .hero-content {
-  width: min(var(--content-max-width), calc(100% - 40px));
+  width: min(1440px, calc(100% - 40px));
   padding: 24px 0;
   position: relative;
   transition: transform 0.2s ease-out;
@@ -137,19 +137,20 @@ body.has-hero {
 
 .hero-simple {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
   align-content: center;
-  gap: 40px;
+  gap: 28px;
   text-align: left;
 }
 
 .hero-simple .hero-title {
+  justify-self: start;
   margin-bottom: 0;
 }
 
 .hero-simple .hero-photo-wrap {
-  width: min(420px, 42vw);
+  width: min(680px, 48vw);
   justify-self: end;
 }
 
