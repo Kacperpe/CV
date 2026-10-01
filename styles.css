@@ -605,6 +605,14 @@ main section > .timeline-item + .timeline-item {
   grid-column: span 2;
 }
 
+.project-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
 .project-number {
   font-family: var(--font-serif);
   font-size: 1.6rem;
@@ -612,7 +620,14 @@ main section > .timeline-item + .timeline-item {
   color: var(--green);
   opacity: 0.55;
   line-height: 1;
-  margin-bottom: 14px;
+}
+
+.project-kind {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .project-content h3 {

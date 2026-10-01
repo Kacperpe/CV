@@ -107,26 +107,34 @@ const TRANSLATIONS = {
       "Website",
     "projects.private":
       "Private repository",
+    "projects.kind.client":
+      "Client project",
+    "projects.kind.side":
+      "Side project",
     "projects.more":
       "All repositories on GitHub",
+    "projects.p1.title":
+      "ASL – Warehouse Booking System",
     "projects.p1.desc":
-      "Full-stack web app for managing warehouse delivery bookings: ramp scheduling, loading and unloading slots, step-by-step confirmation of each stage and work with carriers and transport companies.",
+      "Web app for booking warehouse deliveries and pickups. Transport companies reserve a time slot at a loading ramp, while warehouse and security staff confirm each stage – from arrival at the gate to departure.",
     "projects.p1.impact":
-      "Five user roles (admin, warehouse, security, carrier, company), real-time updates, email notifications and Excel export.",
+      "Five user roles, a ramp schedule that updates live, email notifications and Excel export. Covered by unit and end-to-end tests and running in production on a Linux server.",
     "projects.p2.desc":
-      "Premium online store for collectible bonsai, designed as an editorial “digital gallery of living trees”, with a custom admin panel and checkout.",
+      "Online store for a bonsai seller: a catalogue of trees and accessories with collections and search, cart, checkout with bank-transfer payment, customer accounts and an Academy section with articles.",
     "projects.p2.impact":
-      "Live client website, bilingual (PL / EN), covered by unit and end-to-end tests.",
+      "Custom admin panel for handling orders and confirming payments. Bilingual (PL / EN) and tested with Vitest and Playwright.",
     "projects.p3.desc":
-      "Telegram bot and web app that turn voice recordings into notes: send a recording, get a Whisper transcription and a ready page in Notion.",
+      "Telegram bot that turns lecture recordings into structured notes. Send a voice message, an audio file or a Google Drive link – the bot transcribes it with Whisper, writes notes with a language model and saves them to Notion.",
     "projects.p3.impact":
-      "Recordings can also be imported straight from Google Drive.",
+      "Several note styles (detailed notes, summary, task list), automatic title and subject tagging; long recordings are split into parts and merged into one note. Runs fully locally.",
     "projects.p4.desc":
-      "FPV drone simulator in the browser: acro physics, a 12-gate race track with timing and two large mission maps – a seaport and an alpine valley.",
+      "Weather for your cycling route at the time you will actually be there. Import a route (GPX, KML, TCX, GeoJSON or a Google Maps link), set the start time and average speed – the app works out when you reach each point and warns about rain on the map.",
     "projects.p4.impact":
-      "Runs offline from a single HTML file, with keyboard and Xbox gamepad support.",
+      "Ride mode, points of interest along the route from OpenStreetMap, PL / EN interface and installable on a phone as an app (PWA).",
     "projects.p5.desc":
-      "Web app for checking the weather along a cycling route, so you know what to expect before and during the ride.",
+      "FPV drone simulator in the browser. Acro flight physics – the drone does not level itself, just like a real racing quad – a race track with 12 gates and lap timing, and two large free-flight maps: a seaport and a mountain valley.",
+    "projects.p5.impact":
+      "Goggle-style on-screen display, keyboard and Xbox gamepad support, best time saved locally. Works offline from a single HTML file.",
   },
   pl: {
     "hero.subtitle":
@@ -222,26 +230,34 @@ const TRANSLATIONS = {
       "Strona",
     "projects.private":
       "Repozytorium prywatne",
+    "projects.kind.client":
+      "Projekt dla klienta",
+    "projects.kind.side":
+      "Projekt własny",
     "projects.more":
       "Wszystkie repozytoria na GitHubie",
+    "projects.p1.title":
+      "ASL – System awizacji magazynowych",
     "projects.p1.desc":
-      "Aplikacja webowa full-stack do obsługi awizacji magazynowych: harmonogram ramp, załadunki i rozładunki, potwierdzanie kolejnych etapów oraz współpraca z przewoźnikami i firmami transportowymi.",
+      "Aplikacja webowa do awizacji dostaw i odbiorów w magazynie. Firmy transportowe rezerwują okno czasowe na rampie, a magazyn i ochrona potwierdzają kolejne etapy – od wjazdu na bramę po wyjazd.",
     "projects.p1.impact":
-      "Pięć ról użytkowników (admin, magazynier, ochrona, przewoźnik, firma), aktualizacje w czasie rzeczywistym, powiadomienia e-mail i eksport do Excela.",
+      "Pięć ról użytkowników, harmonogram ramp aktualizowany na żywo, powiadomienia e-mail i eksport do Excela. Pokryta testami jednostkowymi i end-to-end, działa produkcyjnie na serwerze Linux.",
     "projects.p2.desc":
-      "Sklep internetowy premium z kolekcjonerskimi drzewkami bonsai, zaprojektowany jako „cyfrowa galeria żywych drzew”, z własnym panelem administracyjnym i koszykiem.",
+      "Sklep internetowy sprzedawcy bonsai: katalog drzewek i akcesoriów z kolekcjami i wyszukiwarką, koszyk, zamówienia z płatnością przelewem, konta klientów i sekcja Akademia z artykułami.",
     "projects.p2.impact":
-      "Działająca strona klienta, dwujęzyczna (PL / EN), pokryta testami jednostkowymi i end-to-end.",
+      "Własny panel administracyjny do obsługi zamówień i potwierdzania płatności. Strona dwujęzyczna (PL / EN), testowana w Vitest i Playwright.",
     "projects.p3.desc":
-      "Bot Telegram i aplikacja webowa, które zamieniają nagrania głosowe w notatki: wysyłasz nagranie, dostajesz transkrypcję Whisperem i gotową stronę w Notion.",
+      "Bot na Telegramie, który zamienia nagrania z zajęć w uporządkowane notatki. Wysyłasz wiadomość głosową, plik audio lub link do Google Drive – bot robi transkrypcję Whisperem, przygotowuje notatki modelem językowym i zapisuje je w Notion.",
     "projects.p3.impact":
-      "Nagrania można też importować bezpośrednio z Google Drive.",
+      "Kilka stylów notatek (szczegółowe, streszczenie, lista zadań), automatyczny tytuł i przypisanie do przedmiotu; długie nagrania są dzielone na części i scalane w jedną notatkę. Działa w pełni lokalnie.",
     "projects.p4.desc":
-      "Symulator drona FPV w przeglądarce: fizyka acro, tor wyścigowy z 12 bramkami i pomiarem czasu oraz dwie duże mapy misyjne – port i dolina górska.",
+      "Pogoda na trasie rowerowej na godzinę, o której faktycznie będziesz w danym miejscu. Importujesz trasę (GPX, KML, TCX, GeoJSON lub link z Google Maps), podajesz godzinę startu i średnią prędkość – aplikacja wylicza, kiedy dotrzesz do kolejnych punktów, i ostrzega na mapie przed deszczem.",
     "projects.p4.impact":
-      "Działa offline z jednego pliku HTML, obsługuje klawiaturę i pada Xbox.",
+      "Tryb jazdy, atrakcje wzdłuż trasy z OpenStreetMap, interfejs PL / EN i możliwość instalacji na telefonie jako aplikacja (PWA).",
     "projects.p5.desc":
-      "Aplikacja webowa do sprawdzania pogody na trasie rowerowej – wiesz, czego się spodziewać przed jazdą i w jej trakcie.",
+      "Symulator drona FPV w przeglądarce. Fizyka acro – dron sam się nie poziomuje, jak prawdziwy dron wyścigowy – tor z 12 bramkami i pomiarem czasu oraz dwie duże mapy do swobodnego lotu: port i dolina górska.",
+    "projects.p5.impact":
+      "Ekran OSD jak w goglach FPV, obsługa klawiatury i pada Xbox, rekord zapisywany lokalnie. Działa offline z jednego pliku HTML.",
   },
 };
 

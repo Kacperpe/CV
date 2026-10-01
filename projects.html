@@ -19,7 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=202610011614" />
   </head>
   <body data-page="projects">
     <header>
@@ -91,11 +91,14 @@
 
         <div class="projects-grid">
           <article class="project-card project-card--wide">
-            <div class="project-number" aria-hidden="true">01</div>
+            <div class="project-meta">
+              <span class="project-number" aria-hidden="true">01</span>
+              <span class="project-kind" data-i18n="projects.kind.client">Client project</span>
+            </div>
             <div class="project-content">
-              <h3>ASL – Warehouse Booking System</h3>
-              <p data-i18n="projects.p1.desc">Full-stack web app for managing warehouse delivery bookings: ramp scheduling, loading and unloading slots, step-by-step confirmation of each stage and work with carriers and transport companies.</p>
-              <p class="project-impact" data-i18n="projects.p1.impact">Five user roles (admin, warehouse, security, carrier, company), real-time updates, email notifications and Excel export.</p>
+              <h3 data-i18n="projects.p1.title">ASL – Warehouse Booking System</h3>
+              <p data-i18n="projects.p1.desc">Web app for booking warehouse deliveries and pickups. Transport companies reserve a time slot at a loading ramp, while warehouse and security staff confirm each stage – from arrival at the gate to departure.</p>
+              <p class="project-impact" data-i18n="projects.p1.impact">Five user roles, a ramp schedule that updates live, email notifications and Excel export. Covered by unit and end-to-end tests and running in production on a Linux server.</p>
               <div class="project-tech">
                 <span class="tech-badge">TypeScript</span>
                 <span class="tech-badge">React</span>
@@ -111,11 +114,14 @@
           </article>
 
           <article class="project-card">
-            <div class="project-number" aria-hidden="true">02</div>
+            <div class="project-meta">
+              <span class="project-number" aria-hidden="true">02</span>
+              <span class="project-kind" data-i18n="projects.kind.client">Client project</span>
+            </div>
             <div class="project-content">
               <h3>Rafał Bonsai</h3>
-              <p data-i18n="projects.p2.desc">Premium online store for collectible bonsai, designed as an editorial “digital gallery of living trees”, with a custom admin panel and checkout.</p>
-              <p class="project-impact" data-i18n="projects.p2.impact">Live client website, bilingual (PL / EN), covered by unit and end-to-end tests.</p>
+              <p data-i18n="projects.p2.desc">Online store for a bonsai seller: a catalogue of trees and accessories with collections and search, cart, checkout with bank-transfer payment, customer accounts and an Academy section with articles.</p>
+              <p class="project-impact" data-i18n="projects.p2.impact">Custom admin panel for handling orders and confirming payments. Bilingual (PL / EN) and tested with Vitest and Playwright.</p>
               <div class="project-tech">
                 <span class="tech-badge">Next.js</span>
                 <span class="tech-badge">TypeScript</span>
@@ -136,16 +142,19 @@
           </article>
 
           <article class="project-card">
-            <div class="project-number" aria-hidden="true">03</div>
+            <div class="project-meta">
+              <span class="project-number" aria-hidden="true">03</span>
+              <span class="project-kind" data-i18n="projects.kind.side">Side project</span>
+            </div>
             <div class="project-content">
               <h3>VoiceNote AI</h3>
-              <p data-i18n="projects.p3.desc">Telegram bot and web app that turn voice recordings into notes: send a recording, get a Whisper transcription and a ready page in Notion.</p>
-              <p class="project-impact" data-i18n="projects.p3.impact">Recordings can also be imported straight from Google Drive.</p>
+              <p data-i18n="projects.p3.desc">Telegram bot that turns lecture recordings into structured notes. Send a voice message, an audio file or a Google Drive link – the bot transcribes it with Whisper, writes notes with a language model and saves them to Notion.</p>
+              <p class="project-impact" data-i18n="projects.p3.impact">Several note styles (detailed notes, summary, task list), automatic title and subject tagging; long recordings are split into parts and merged into one note. Runs fully locally.</p>
               <div class="project-tech">
                 <span class="tech-badge">Python</span>
-                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">Telegram Bot API</span>
                 <span class="tech-badge">Whisper</span>
-                <span class="tech-badge">Telegram Bot</span>
+                <span class="tech-badge">LM Studio</span>
                 <span class="tech-badge">Notion API</span>
               </div>
               <div class="project-links">
@@ -161,11 +170,49 @@
           </article>
 
           <article class="project-card">
-            <div class="project-number" aria-hidden="true">04</div>
+            <div class="project-meta">
+              <span class="project-number" aria-hidden="true">04</span>
+              <span class="project-kind" data-i18n="projects.kind.side">Side project</span>
+            </div>
+            <div class="project-content">
+              <h3>Weather for Bikers</h3>
+              <p data-i18n="projects.p4.desc">Weather for your cycling route at the time you will actually be there. Import a route (GPX, KML, TCX, GeoJSON or a Google Maps link), set the start time and average speed – the app works out when you reach each point and warns about rain on the map.</p>
+              <p class="project-impact" data-i18n="projects.p4.impact">Ride mode, points of interest along the route from OpenStreetMap, PL / EN interface and installable on a phone as an app (PWA).</p>
+              <div class="project-tech">
+                <span class="tech-badge">Next.js</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Supabase</span>
+                <span class="tech-badge">Leaflet</span>
+                <span class="tech-badge">Open-Meteo</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://weatherforbikers.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.demo"
+                  >Live demo</a
+                >
+                <a
+                  href="https://github.com/Kacperpe/weatherforbikers"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.code"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-number" aria-hidden="true">05</span>
+              <span class="project-kind" data-i18n="projects.kind.side">Side project</span>
+            </div>
             <div class="project-content">
               <h3>GraDron FPV</h3>
-              <p data-i18n="projects.p4.desc">FPV drone simulator in the browser: acro physics, a 12-gate race track with timing and two large mission maps – a seaport and an alpine valley.</p>
-              <p class="project-impact" data-i18n="projects.p4.impact">Runs offline from a single HTML file, with keyboard and Xbox gamepad support.</p>
+              <p data-i18n="projects.p5.desc">FPV drone simulator in the browser. Acro flight physics – the drone does not level itself, just like a real racing quad – a race track with 12 gates and lap timing, and two large free-flight maps: a seaport and a mountain valley.</p>
+              <p class="project-impact" data-i18n="projects.p5.impact">Goggle-style on-screen display, keyboard and Xbox gamepad support, best time saved locally. Works offline from a single HTML file.</p>
               <div class="project-tech">
                 <span class="tech-badge">JavaScript</span>
                 <span class="tech-badge">three.js</span>
@@ -181,34 +228,6 @@
                 >
                 <a
                   href="https://github.com/Kacperpe/gradron-fpv"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-i18n="projects.link.code"
-                  >Code</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-number" aria-hidden="true">05</div>
-            <div class="project-content">
-              <h3>Weather for Bikers</h3>
-              <p data-i18n="projects.p5.desc">Web app for checking the weather along a cycling route, so you know what to expect before and during the ride.</p>
-              <div class="project-tech">
-                <span class="tech-badge">TypeScript</span>
-                <span class="tech-badge">Next.js</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://weatherforbikers.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-i18n="projects.link.demo"
-                  >Live demo</a
-                >
-                <a
-                  href="https://github.com/Kacperpe/weatherforbikers"
                   target="_blank"
                   rel="noreferrer"
                   data-i18n="projects.link.code"
@@ -235,6 +254,6 @@
       <p data-i18n="common.footer">© 2026 Kacper Pasiński</p>
     </footer>
 
-    <script src="site.js"></script>
+    <script src="site.js?v=202610011614"></script>
   </body>
 </html>
