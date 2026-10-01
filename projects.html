@@ -6,7 +6,7 @@
     <title>Projects – Kacper Pasiński</title>
     <meta
       name="description"
-      content="Selected projects by Kacper Pasiński: an AI plugin for QGIS, data pipelines, mobile apps and browser games."
+      content="Selected projects by Kacper Pasiński: a warehouse booking system, an online store, AI tools, data pipelines and mobile apps."
     />
     <meta name="theme-color" content="#31473A" />
     <link
@@ -85,25 +85,87 @@
       <section id="projects">
         <h2 data-i18n="projects.heading">Selected Projects</h2>
         <p class="section-intro" data-i18n="projects.intro">
-          Side projects I build after hours – from GIS tooling and data
-          pipelines to mobile apps and browser games.
+          Client work and side projects – from production web apps to GIS
+          tooling, data pipelines and mobile apps.
         </p>
 
         <div class="projects-grid">
           <article class="project-card project-card--wide">
             <div class="project-number" aria-hidden="true">01</div>
             <div class="project-content">
+              <h3>ASL – Warehouse Booking System</h3>
+              <p data-i18n="projects.p1.desc">Full-stack web app for managing warehouse delivery bookings: ramp scheduling, loading and unloading slots, step-by-step confirmation of each stage and work with carriers and transport companies.</p>
+              <p class="project-impact" data-i18n="projects.p1.impact">Five user roles (admin, warehouse, security, carrier, company), real-time updates, email notifications and Excel export.</p>
+              <div class="project-tech">
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Express</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">Prisma</span>
+                <span class="tech-badge">Socket.IO</span>
+              </div>
+              <div class="project-links">
+                <span class="project-private" data-i18n="projects.private">Private repository</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number" aria-hidden="true">02</div>
+            <div class="project-content">
+              <h3>Rafał Bonsai</h3>
+              <p data-i18n="projects.p2.desc">Premium online store for collectible bonsai, designed as an editorial “digital gallery of living trees”, with a custom admin panel and checkout.</p>
+              <p class="project-impact" data-i18n="projects.p2.impact">Live client website, bilingual (PL / EN), covered by unit and end-to-end tests.</p>
+              <div class="project-tech">
+                <span class="tech-badge">Next.js</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Supabase</span>
+                <span class="tech-badge">Playwright</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://rafalbonsai.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.site"
+                  >Website</a
+                >
+                <span class="project-private" data-i18n="projects.private">Private repository</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number" aria-hidden="true">03</div>
+            <div class="project-content">
+              <h3>VoiceNote AI</h3>
+              <p data-i18n="projects.p3.desc">Telegram bot and web app that turn voice recordings into notes: send a recording, get a Whisper transcription and a ready page in Notion.</p>
+              <p class="project-impact" data-i18n="projects.p3.impact">Recordings can also be imported straight from Google Drive.</p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">Whisper</span>
+                <span class="tech-badge">Telegram Bot</span>
+                <span class="tech-badge">Notion API</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Kacperpe/LectureNotes"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.code"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number" aria-hidden="true">04</div>
+            <div class="project-content">
               <h3>AIQGIS</h3>
-              <p data-i18n="projects.p1.desc">
-                QGIS 3 plugin that adds an AI chat panel aware of the current
-                project – layers, CRS, selection and fields. The assistant runs
-                GIS operations (buffer, clip, dissolve, reproject) and writes
-                PyQGIS code that executes only after user approval.
-              </p>
-              <p class="project-impact" data-i18n="projects.p1.impact">
-                Works with 7 AI providers, including local models via LM
-                Studio.
-              </p>
+              <p data-i18n="projects.p4.desc">QGIS 3 plugin that adds an AI chat panel aware of the current project – layers, CRS, selection and fields. The assistant runs GIS operations and writes PyQGIS code that executes only after user approval.</p>
+              <p class="project-impact" data-i18n="projects.p4.impact">Works with 7 AI providers, including local models via LM Studio.</p>
               <div class="project-tech">
                 <span class="tech-badge">Python</span>
                 <span class="tech-badge">PyQGIS</span>
@@ -123,50 +185,11 @@
           </article>
 
           <article class="project-card">
-            <div class="project-number" aria-hidden="true">02</div>
-            <div class="project-content">
-              <h3>KongresTrading</h3>
-              <p data-i18n="projects.p2.desc">
-                Self-hosted tracker of US Congress members’ stock trades, built
-                from official STOCK Act disclosures. A daily Python pipeline
-                parses the filings into SQLite and a Next.js dashboard presents
-                them.
-              </p>
-              <p class="project-impact" data-i18n="projects.p2.impact">
-                Runs on a Raspberry Pi in two Docker containers – no
-                third-party data providers.
-              </p>
-              <div class="project-tech">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">Next.js</span>
-                <span class="tech-badge">SQLite</span>
-                <span class="tech-badge">Docker</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/Kacperpe/KongresTrading"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-i18n="projects.link.code"
-                  >Code</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-number" aria-hidden="true">03</div>
+            <div class="project-number" aria-hidden="true">05</div>
             <div class="project-content">
               <h3>GraDron FPV</h3>
-              <p data-i18n="projects.p3.desc">
-                FPV drone simulator in the browser: acro physics, a 12-gate
-                race track with timing and two large mission maps – a seaport
-                and an alpine valley.
-              </p>
-              <p class="project-impact" data-i18n="projects.p3.impact">
-                Runs offline from a single HTML file, with keyboard and Xbox
-                gamepad support.
-              </p>
+              <p data-i18n="projects.p5.desc">FPV drone simulator in the browser: acro physics, a 12-gate race track with timing and two large mission maps – a seaport and an alpine valley.</p>
+              <p class="project-impact" data-i18n="projects.p5.impact">Runs offline from a single HTML file, with keyboard and Xbox gamepad support.</p>
               <div class="project-tech">
                 <span class="tech-badge">JavaScript</span>
                 <span class="tech-badge">three.js</span>
@@ -192,18 +215,11 @@
           </article>
 
           <article class="project-card">
-            <div class="project-number" aria-hidden="true">04</div>
+            <div class="project-number" aria-hidden="true">06</div>
             <div class="project-content">
               <h3>Blotsignal</h3>
-              <p data-i18n="projects.p4.desc">
-                Private Android messenger that works without any server.
-                Messages are end-to-end encrypted with the Signal Protocol and
-                sent directly over the local network; contacts pair by QR code.
-              </p>
-              <p class="project-impact" data-i18n="projects.p4.impact">
-                Offline message queue with automatic retry once devices
-                reconnect.
-              </p>
+              <p data-i18n="projects.p6.desc">Private Android messenger that works without any server. Messages are end-to-end encrypted with the Signal Protocol and sent directly over the local network; contacts pair by QR code.</p>
+              <p class="project-impact" data-i18n="projects.p6.impact">Offline message queue with automatic retry once devices reconnect.</p>
               <div class="project-tech">
                 <span class="tech-badge">Flutter</span>
                 <span class="tech-badge">Dart</span>
@@ -223,43 +239,10 @@
           </article>
 
           <article class="project-card">
-            <div class="project-number" aria-hidden="true">05</div>
-            <div class="project-content">
-              <h3>MT5 &amp; cTrader Monitor</h3>
-              <p data-i18n="projects.p5.desc">
-                Real-time dashboard for MetaTrader 5 and cTrader trading
-                accounts: balance, open positions, equity curve and a monthly
-                P&amp;L calendar.
-              </p>
-              <p class="project-impact" data-i18n="projects.p5.impact">
-                Full performance statistics – win rate, profit factor, Sharpe
-                ratio and drawdown.
-              </p>
-              <div class="project-tech">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">JavaScript</span>
-                <span class="tech-badge">OAuth2</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/Kacperpe/StockMarketCalendar"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-i18n="projects.link.code"
-                  >Code</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card project-card--wide">
-            <div class="project-number" aria-hidden="true">06</div>
+            <div class="project-number" aria-hidden="true">07</div>
             <div class="project-content">
               <h3>Weather for Bikers</h3>
-              <p data-i18n="projects.p6.desc">
-                Web app for checking the weather along a cycling route, so you
-                know what to expect before and during the ride.
-              </p>
+              <p data-i18n="projects.p7.desc">Web app for checking the weather along a cycling route, so you know what to expect before and during the ride.</p>
               <div class="project-tech">
                 <span class="tech-badge">TypeScript</span>
                 <span class="tech-badge">Next.js</span>

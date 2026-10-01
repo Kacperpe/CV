@@ -95,33 +95,45 @@ const TRANSLATIONS = {
     "skills.d2": "Waste management",
     "skills.d3": "Permitting and compliance",
     "skills.d4": "Cross-team communication",
-    "projects.heading": "Selected Projects",
+    "projects.heading":
+      "Selected Projects",
     "projects.intro":
-      "Side projects I build after hours – from GIS tooling and data pipelines to mobile apps and browser games.",
-    "projects.link.code": "Code",
-    "projects.link.demo": "Live demo",
-    "projects.more": "All repositories on GitHub",
+      "Client work and side projects – from production web apps to GIS tooling, data pipelines and mobile apps.",
+    "projects.link.code":
+      "Code",
+    "projects.link.demo":
+      "Live demo",
+    "projects.link.site":
+      "Website",
+    "projects.private":
+      "Private repository",
+    "projects.more":
+      "All repositories on GitHub",
     "projects.p1.desc":
-      "QGIS 3 plugin that adds an AI chat panel aware of the current project – layers, CRS, selection and fields. The assistant runs GIS operations (buffer, clip, dissolve, reproject) and writes PyQGIS code that executes only after user approval.",
+      "Full-stack web app for managing warehouse delivery bookings: ramp scheduling, loading and unloading slots, step-by-step confirmation of each stage and work with carriers and transport companies.",
     "projects.p1.impact":
-      "Works with 7 AI providers, including local models via LM Studio.",
+      "Five user roles (admin, warehouse, security, carrier, company), real-time updates, email notifications and Excel export.",
     "projects.p2.desc":
-      "Self-hosted tracker of US Congress members’ stock trades, built from official STOCK Act disclosures. A daily Python pipeline parses the filings into SQLite and a Next.js dashboard presents them.",
+      "Premium online store for collectible bonsai, designed as an editorial “digital gallery of living trees”, with a custom admin panel and checkout.",
     "projects.p2.impact":
-      "Runs on a Raspberry Pi in two Docker containers – no third-party data providers.",
+      "Live client website, bilingual (PL / EN), covered by unit and end-to-end tests.",
     "projects.p3.desc":
-      "FPV drone simulator in the browser: acro physics, a 12-gate race track with timing and two large mission maps – a seaport and an alpine valley.",
+      "Telegram bot and web app that turn voice recordings into notes: send a recording, get a Whisper transcription and a ready page in Notion.",
     "projects.p3.impact":
-      "Runs offline from a single HTML file, with keyboard and Xbox gamepad support.",
+      "Recordings can also be imported straight from Google Drive.",
     "projects.p4.desc":
-      "Private Android messenger that works without any server. Messages are end-to-end encrypted with the Signal Protocol and sent directly over the local network; contacts pair by QR code.",
+      "QGIS 3 plugin that adds an AI chat panel aware of the current project – layers, CRS, selection and fields. The assistant runs GIS operations and writes PyQGIS code that executes only after user approval.",
     "projects.p4.impact":
-      "Offline message queue with automatic retry once devices reconnect.",
+      "Works with 7 AI providers, including local models via LM Studio.",
     "projects.p5.desc":
-      "Real-time dashboard for MetaTrader 5 and cTrader trading accounts: balance, open positions, equity curve and a monthly P&L calendar.",
+      "FPV drone simulator in the browser: acro physics, a 12-gate race track with timing and two large mission maps – a seaport and an alpine valley.",
     "projects.p5.impact":
-      "Full performance statistics – win rate, profit factor, Sharpe ratio and drawdown.",
+      "Runs offline from a single HTML file, with keyboard and Xbox gamepad support.",
     "projects.p6.desc":
+      "Private Android messenger that works without any server. Messages are end-to-end encrypted with the Signal Protocol and sent directly over the local network; contacts pair by QR code.",
+    "projects.p6.impact":
+      "Offline message queue with automatic retry once devices reconnect.",
+    "projects.p7.desc":
       "Web app for checking the weather along a cycling route, so you know what to expect before and during the ride.",
   },
   pl: {
@@ -206,33 +218,45 @@ const TRANSLATIONS = {
     "skills.d2": "Gospodarka odpadami",
     "skills.d3": "Pozwolenia i zgodność",
     "skills.d4": "Komunikacja międzydziałowa",
-    "projects.heading": "Wybrane projekty",
+    "projects.heading":
+      "Wybrane projekty",
     "projects.intro":
-      "Projekty, które buduję po godzinach – od narzędzi GIS i przetwarzania danych, po aplikacje mobilne i gry w przeglądarce.",
-    "projects.link.code": "Kod",
-    "projects.link.demo": "Demo",
-    "projects.more": "Wszystkie repozytoria na GitHubie",
+      "Projekty dla klientów i własne – od produkcyjnych aplikacji webowych, przez narzędzia GIS i przetwarzanie danych, po aplikacje mobilne.",
+    "projects.link.code":
+      "Kod",
+    "projects.link.demo":
+      "Demo",
+    "projects.link.site":
+      "Strona",
+    "projects.private":
+      "Repozytorium prywatne",
+    "projects.more":
+      "Wszystkie repozytoria na GitHubie",
     "projects.p1.desc":
-      "Wtyczka do QGIS 3 z panelem czatu AI, który zna bieżący projekt – warstwy, układ współrzędnych, zaznaczenie i pola. Asystent wykonuje operacje GIS (bufor, przycinanie, agregacja, reprojekcja) i pisze kod PyQGIS uruchamiany dopiero po akceptacji użytkownika.",
+      "Aplikacja webowa full-stack do obsługi awizacji magazynowych: harmonogram ramp, załadunki i rozładunki, potwierdzanie kolejnych etapów oraz współpraca z przewoźnikami i firmami transportowymi.",
     "projects.p1.impact":
-      "Obsługuje 7 dostawców AI, w tym modele lokalne przez LM Studio.",
+      "Pięć ról użytkowników (admin, magazynier, ochrona, przewoźnik, firma), aktualizacje w czasie rzeczywistym, powiadomienia e-mail i eksport do Excela.",
     "projects.p2.desc":
-      "Samodzielnie hostowany tracker transakcji giełdowych członków Kongresu USA, oparty na oficjalnych raportach STOCK Act. Codzienny pipeline w Pythonie parsuje zgłoszenia do SQLite, a dashboard w Next.js je prezentuje.",
+      "Sklep internetowy premium z kolekcjonerskimi drzewkami bonsai, zaprojektowany jako „cyfrowa galeria żywych drzew”, z własnym panelem administracyjnym i koszykiem.",
     "projects.p2.impact":
-      "Działa na Raspberry Pi w dwóch kontenerach Docker – bez zewnętrznych dostawców danych.",
+      "Działająca strona klienta, dwujęzyczna (PL / EN), pokryta testami jednostkowymi i end-to-end.",
     "projects.p3.desc":
-      "Symulator drona FPV w przeglądarce: fizyka acro, tor wyścigowy z 12 bramkami i pomiarem czasu oraz dwie duże mapy misyjne – port i dolina górska.",
+      "Bot Telegram i aplikacja webowa, które zamieniają nagrania głosowe w notatki: wysyłasz nagranie, dostajesz transkrypcję Whisperem i gotową stronę w Notion.",
     "projects.p3.impact":
-      "Działa offline z jednego pliku HTML, obsługuje klawiaturę i pada Xbox.",
+      "Nagrania można też importować bezpośrednio z Google Drive.",
     "projects.p4.desc":
-      "Prywatny komunikator na Androida działający bez serwera. Wiadomości są szyfrowane end-to-end protokołem Signal i przesyłane bezpośrednio w sieci lokalnej; kontakty paruje się kodem QR.",
+      "Wtyczka do QGIS 3 z panelem czatu AI, który zna bieżący projekt – warstwy, układ współrzędnych, zaznaczenie i pola. Asystent wykonuje operacje GIS i pisze kod PyQGIS uruchamiany dopiero po akceptacji użytkownika.",
     "projects.p4.impact":
-      "Kolejka wiadomości offline z automatycznym ponawianiem po ponownym połączeniu.",
+      "Obsługuje 7 dostawców AI, w tym modele lokalne przez LM Studio.",
     "projects.p5.desc":
-      "Dashboard czasu rzeczywistego dla kont MetaTrader 5 i cTrader: saldo, otwarte pozycje, krzywa kapitału i miesięczny kalendarz P&L.",
+      "Symulator drona FPV w przeglądarce: fizyka acro, tor wyścigowy z 12 bramkami i pomiarem czasu oraz dwie duże mapy misyjne – port i dolina górska.",
     "projects.p5.impact":
-      "Pełne statystyki skuteczności – win rate, profit factor, wskaźnik Sharpe’a i drawdown.",
+      "Działa offline z jednego pliku HTML, obsługuje klawiaturę i pada Xbox.",
     "projects.p6.desc":
+      "Prywatny komunikator na Androida działający bez serwera. Wiadomości są szyfrowane end-to-end protokołem Signal i przesyłane bezpośrednio w sieci lokalnej; kontakty paruje się kodem QR.",
+    "projects.p6.impact":
+      "Kolejka wiadomości offline z automatycznym ponawianiem po ponownym połączeniu.",
+    "projects.p7.desc":
       "Aplikacja webowa do sprawdzania pogody na trasie rowerowej – wiesz, czego się spodziewać przed jazdą i w jej trakcie.",
   },
 };

@@ -664,6 +664,16 @@ main section > .timeline-item + .timeline-item {
   content: " ↗";
 }
 
+.project-private {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.project-private::before {
+  content: "🔒 ";
+  filter: grayscale(1);
+}
+
 .project-links a:hover,
 .projects-more a:hover {
   text-decoration-color: var(--green);
