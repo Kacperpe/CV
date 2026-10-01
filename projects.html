@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV - Projects</title>
+    <title>Projects – Kacper Pasiński</title>
+    <meta
+      name="description"
+      content="Selected environmental engineering projects by Kacper Pasiński: audits, energy optimization, waste management and compliance reporting."
+    />
+    <meta name="theme-color" content="#31473A" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2331473A'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' text-anchor='middle' fill='%23EDF4F2'%3EKP%3C/text%3E%3C/svg%3E"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -15,36 +24,16 @@
   <body data-page="projects">
     <header>
       <div class="header-content">
-        <div class="profile-section">
-          <h1>Kacper <span class="accent">Pasi&#324;ski</span></h1>
-          <p class="subtitle" data-i18n="profile.role">
-            Environmental Engineer
-          </p>
-          <div class="profile-controls">
-            <button
-              class="lang-toggle"
-              type="button"
-              data-lang-toggle
-              aria-label="Switch language to Polish"
-            >
-              <span class="lang-flag" aria-hidden="true">PL</span>
-              <span class="lang-code">PL</span>
-            </button>
-            <button
-              class="menu-toggle"
-              type="button"
-              aria-controls="site-nav"
-              aria-expanded="false"
-              data-i18n="common.menu"
-            >
-              Menu
-            </button>
-          </div>
-        </div>
+        <a class="brand" href="index.html">
+          <span class="brand-name">Kacper Pasiński</span>
+          <span class="brand-role" data-i18n="profile.role"
+            >Environmental Engineer</span
+          >
+        </a>
 
         <nav id="site-nav" aria-label="Main navigation">
           <ul>
-            <li><a href="index.html" data-i18n="nav.about">About</a></li>
+            <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
             <li>
               <a href="index.html#experience" data-i18n="nav.experience"
                 >Experience</a
@@ -70,8 +59,24 @@
           </ul>
         </nav>
 
-        <div class="profile-photo">
-          <img src="kacperZdjecie.jpg" alt="Kacper Pasi&#324;ski" />
+        <div class="header-controls">
+          <button
+            class="lang-toggle"
+            type="button"
+            data-lang-toggle
+            aria-label="Switch language to Polish"
+          >
+            <span class="lang-code">PL</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-controls="site-nav"
+            aria-expanded="false"
+            data-i18n="common.menu"
+          >
+            Menu
+          </button>
         </div>
       </div>
     </header>
@@ -82,7 +87,7 @@
 
         <div class="projects-grid">
           <article class="project-card project-card--wide">
-            <div class="project-image">01</div>
+            <div class="project-number" aria-hidden="true">01</div>
             <div class="project-content">
               <h3 data-i18n="projects.item1.title">
                 Environmental Audit for an Industrial Plant
@@ -92,8 +97,8 @@
                 reduce environmental footprint.
               </p>
               <p class="project-impact" data-i18n="projects.item1.impact">
-                Impact: delivered a prioritized roadmap for compliance actions
-                and reporting quality.
+                Delivered a prioritized roadmap for compliance actions and
+                reporting quality.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">ISO 14001</span>
@@ -105,8 +110,8 @@
             </div>
           </article>
 
-          <article class="project-card project-card--tall">
-            <div class="project-image">02</div>
+          <article class="project-card">
+            <div class="project-number" aria-hidden="true">02</div>
             <div class="project-content">
               <h3 data-i18n="projects.item2.title">
                 Energy Consumption Optimization
@@ -116,7 +121,7 @@
                 implemented process improvements.
               </p>
               <p class="project-impact" data-i18n="projects.item2.impact">
-                Impact: introduced KPI cadence for utilities and identified the
+                Introduced KPI cadence for utilities and identified the
                 highest-return efficiency measures.
               </p>
               <div class="project-tech">
@@ -128,7 +133,7 @@
           </article>
 
           <article class="project-card">
-            <div class="project-image">03</div>
+            <div class="project-number" aria-hidden="true">03</div>
             <div class="project-content">
               <h3 data-i18n="projects.item3.title">Waste Management Model</h3>
               <p data-i18n="projects.item3.desc">
@@ -136,8 +141,8 @@
                 documentation and implementation timeline.
               </p>
               <p class="project-impact" data-i18n="projects.item3.impact">
-                Impact: improved waste traceability and clarified
-                responsibilities per process stream.
+                Improved waste traceability and clarified responsibilities per
+                process stream.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">BDO</span>
@@ -149,8 +154,8 @@
             </div>
           </article>
 
-          <article class="project-card project-card--wide project-card--accent">
-            <div class="project-image">04</div>
+          <article class="project-card project-card--wide">
+            <div class="project-number" aria-hidden="true">04</div>
             <div class="project-content">
               <h3 data-i18n="projects.item4.title">
                 Compliance Reporting Sprint
@@ -160,8 +165,8 @@
                 reporting consistency and turnaround.
               </p>
               <p class="project-impact" data-i18n="projects.item4.impact">
-                Impact: reduced report preparation friction by introducing
-                templates and role-based ownership.
+                Reduced report preparation friction by introducing templates and
+                role-based ownership.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Templates</span>
@@ -175,9 +180,7 @@
     </main>
 
     <footer>
-      <p data-i18n="common.footer">
-        &copy; 2026 Kacper Pasi&#324;ski. All rights reserved.
-      </p>
+      <p data-i18n="common.footer">© 2026 Kacper Pasiński</p>
     </footer>
 
     <script src="site.js"></script>
