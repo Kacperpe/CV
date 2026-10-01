@@ -96,28 +96,33 @@ const TRANSLATIONS = {
     "skills.d3": "Permitting and compliance",
     "skills.d4": "Cross-team communication",
     "projects.heading": "Selected Projects",
-    "projects.item1.title": "Environmental Audit for an Industrial Plant",
-    "projects.item1.desc":
-      "A comprehensive review of emission areas and an action plan to reduce environmental footprint.",
-    "projects.item1.impact":
-      "Delivered a prioritized roadmap for compliance actions and reporting quality.",
-    "projects.item1.badge3": "Reporting",
-    "projects.item2.title": "Energy Consumption Optimization",
-    "projects.item2.desc":
-      "An analytics project based on measurement data, completed with implemented process improvements.",
-    "projects.item2.impact":
-      "Introduced KPI cadence for utilities and identified the highest-return efficiency measures.",
-    "projects.item3.title": "Waste Management Model",
-    "projects.item3.desc":
-      "Development of a segregation and transfer model, including documentation and implementation timeline.",
-    "projects.item3.impact":
-      "Improved waste traceability and clarified responsibilities per process stream.",
-    "projects.item3.badge3": "Planning",
-    "projects.item4.title": "Compliance Reporting Sprint",
-    "projects.item4.desc":
-      "Short-cycle improvement project focused on monthly environmental reporting consistency and turnaround.",
-    "projects.item4.impact":
-      "Reduced report preparation friction by introducing templates and role-based ownership.",
+    "projects.intro":
+      "Side projects I build after hours – from GIS tooling and data pipelines to mobile apps and browser games.",
+    "projects.link.code": "Code",
+    "projects.link.demo": "Live demo",
+    "projects.more": "All repositories on GitHub",
+    "projects.p1.desc":
+      "QGIS 3 plugin that adds an AI chat panel aware of the current project – layers, CRS, selection and fields. The assistant runs GIS operations (buffer, clip, dissolve, reproject) and writes PyQGIS code that executes only after user approval.",
+    "projects.p1.impact":
+      "Works with 7 AI providers, including local models via LM Studio.",
+    "projects.p2.desc":
+      "Self-hosted tracker of US Congress members’ stock trades, built from official STOCK Act disclosures. A daily Python pipeline parses the filings into SQLite and a Next.js dashboard presents them.",
+    "projects.p2.impact":
+      "Runs on a Raspberry Pi in two Docker containers – no third-party data providers.",
+    "projects.p3.desc":
+      "FPV drone simulator in the browser: acro physics, a 12-gate race track with timing and two large mission maps – a seaport and an alpine valley.",
+    "projects.p3.impact":
+      "Runs offline from a single HTML file, with keyboard and Xbox gamepad support.",
+    "projects.p4.desc":
+      "Private Android messenger that works without any server. Messages are end-to-end encrypted with the Signal Protocol and sent directly over the local network; contacts pair by QR code.",
+    "projects.p4.impact":
+      "Offline message queue with automatic retry once devices reconnect.",
+    "projects.p5.desc":
+      "Real-time dashboard for MetaTrader 5 and cTrader trading accounts: balance, open positions, equity curve and a monthly P&L calendar.",
+    "projects.p5.impact":
+      "Full performance statistics – win rate, profit factor, Sharpe ratio and drawdown.",
+    "projects.p6.desc":
+      "Web app for checking the weather along a cycling route, so you know what to expect before and during the ride.",
   },
   pl: {
     "hero.subtitle":
@@ -202,28 +207,33 @@ const TRANSLATIONS = {
     "skills.d3": "Pozwolenia i zgodność",
     "skills.d4": "Komunikacja międzydziałowa",
     "projects.heading": "Wybrane projekty",
-    "projects.item1.title": "Audyt środowiskowy zakładu przemysłowego",
-    "projects.item1.desc":
-      "Kompleksowy przegląd obszarów emisyjnych i plan działań ograniczających ślad środowiskowy.",
-    "projects.item1.impact":
-      "Priorytetowa mapa działań na rzecz zgodności i jakości raportowania.",
-    "projects.item1.badge3": "Raportowanie",
-    "projects.item2.title": "Optymalizacja zużycia energii",
-    "projects.item2.desc":
-      "Projekt analityczny oparty na danych pomiarowych, zakończony wdrożeniem usprawnień procesowych.",
-    "projects.item2.impact":
-      "Wdrożenie cyklu KPI dla mediów oraz wskazanie działań o najwyższym zwrocie.",
-    "projects.item3.title": "Model gospodarki odpadami",
-    "projects.item3.desc":
-      "Opracowanie modelu segregacji i przekazywania odpadów wraz z dokumentacją i harmonogramem wdrożenia.",
-    "projects.item3.impact":
-      "Lepsza identyfikowalność strumieni odpadów i jasny podział odpowiedzialności.",
-    "projects.item3.badge3": "Planowanie",
-    "projects.item4.title": "Sprint raportowania zgodności",
-    "projects.item4.desc":
-      "Krótki projekt usprawniający spójność i terminowość miesięcznego raportowania środowiskowego.",
-    "projects.item4.impact":
-      "Mniej tarcia przy przygotowaniu raportów dzięki szablonom i przypisaniu odpowiedzialności.",
+    "projects.intro":
+      "Projekty, które buduję po godzinach – od narzędzi GIS i przetwarzania danych, po aplikacje mobilne i gry w przeglądarce.",
+    "projects.link.code": "Kod",
+    "projects.link.demo": "Demo",
+    "projects.more": "Wszystkie repozytoria na GitHubie",
+    "projects.p1.desc":
+      "Wtyczka do QGIS 3 z panelem czatu AI, który zna bieżący projekt – warstwy, układ współrzędnych, zaznaczenie i pola. Asystent wykonuje operacje GIS (bufor, przycinanie, agregacja, reprojekcja) i pisze kod PyQGIS uruchamiany dopiero po akceptacji użytkownika.",
+    "projects.p1.impact":
+      "Obsługuje 7 dostawców AI, w tym modele lokalne przez LM Studio.",
+    "projects.p2.desc":
+      "Samodzielnie hostowany tracker transakcji giełdowych członków Kongresu USA, oparty na oficjalnych raportach STOCK Act. Codzienny pipeline w Pythonie parsuje zgłoszenia do SQLite, a dashboard w Next.js je prezentuje.",
+    "projects.p2.impact":
+      "Działa na Raspberry Pi w dwóch kontenerach Docker – bez zewnętrznych dostawców danych.",
+    "projects.p3.desc":
+      "Symulator drona FPV w przeglądarce: fizyka acro, tor wyścigowy z 12 bramkami i pomiarem czasu oraz dwie duże mapy misyjne – port i dolina górska.",
+    "projects.p3.impact":
+      "Działa offline z jednego pliku HTML, obsługuje klawiaturę i pada Xbox.",
+    "projects.p4.desc":
+      "Prywatny komunikator na Androida działający bez serwera. Wiadomości są szyfrowane end-to-end protokołem Signal i przesyłane bezpośrednio w sieci lokalnej; kontakty paruje się kodem QR.",
+    "projects.p4.impact":
+      "Kolejka wiadomości offline z automatycznym ponawianiem po ponownym połączeniu.",
+    "projects.p5.desc":
+      "Dashboard czasu rzeczywistego dla kont MetaTrader 5 i cTrader: saldo, otwarte pozycje, krzywa kapitału i miesięczny kalendarz P&L.",
+    "projects.p5.impact":
+      "Pełne statystyki skuteczności – win rate, profit factor, wskaźnik Sharpe’a i drawdown.",
+    "projects.p6.desc":
+      "Aplikacja webowa do sprawdzania pogody na trasie rowerowej – wiesz, czego się spodziewać przed jazdą i w jej trakcie.",
   },
 };
 

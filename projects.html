@@ -6,7 +6,7 @@
     <title>Projects – Kacper Pasiński</title>
     <meta
       name="description"
-      content="Selected environmental engineering projects by Kacper Pasiński: audits, energy optimization, waste management and compliance reporting."
+      content="Selected projects by Kacper Pasiński: an AI plugin for QGIS, data pipelines, mobile apps and browser games."
     />
     <meta name="theme-color" content="#31473A" />
     <link
@@ -84,27 +84,39 @@
     <main class="container">
       <section id="projects">
         <h2 data-i18n="projects.heading">Selected Projects</h2>
+        <p class="section-intro" data-i18n="projects.intro">
+          Side projects I build after hours – from GIS tooling and data
+          pipelines to mobile apps and browser games.
+        </p>
 
         <div class="projects-grid">
           <article class="project-card project-card--wide">
             <div class="project-number" aria-hidden="true">01</div>
             <div class="project-content">
-              <h3 data-i18n="projects.item1.title">
-                Environmental Audit for an Industrial Plant
-              </h3>
-              <p data-i18n="projects.item1.desc">
-                A comprehensive review of emission areas and an action plan to
-                reduce environmental footprint.
+              <h3>AIQGIS</h3>
+              <p data-i18n="projects.p1.desc">
+                QGIS 3 plugin that adds an AI chat panel aware of the current
+                project – layers, CRS, selection and fields. The assistant runs
+                GIS operations (buffer, clip, dissolve, reproject) and writes
+                PyQGIS code that executes only after user approval.
               </p>
-              <p class="project-impact" data-i18n="projects.item1.impact">
-                Delivered a prioritized roadmap for compliance actions and
-                reporting quality.
+              <p class="project-impact" data-i18n="projects.p1.impact">
+                Works with 7 AI providers, including local models via LM
+                Studio.
               </p>
               <div class="project-tech">
-                <span class="tech-badge">ISO 14001</span>
-                <span class="tech-badge">EHS</span>
-                <span class="tech-badge" data-i18n="projects.item1.badge3"
-                  >Reporting</span
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">PyQGIS</span>
+                <span class="tech-badge">QGIS</span>
+                <span class="tech-badge">LLM</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Kacperpe/AIQGIS"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.code"
+                  >Code</a
                 >
               </div>
             </div>
@@ -113,21 +125,31 @@
           <article class="project-card">
             <div class="project-number" aria-hidden="true">02</div>
             <div class="project-content">
-              <h3 data-i18n="projects.item2.title">
-                Energy Consumption Optimization
-              </h3>
-              <p data-i18n="projects.item2.desc">
-                An analytics project based on measurement data, completed with
-                implemented process improvements.
+              <h3>KongresTrading</h3>
+              <p data-i18n="projects.p2.desc">
+                Self-hosted tracker of US Congress members’ stock trades, built
+                from official STOCK Act disclosures. A daily Python pipeline
+                parses the filings into SQLite and a Next.js dashboard presents
+                them.
               </p>
-              <p class="project-impact" data-i18n="projects.item2.impact">
-                Introduced KPI cadence for utilities and identified the
-                highest-return efficiency measures.
+              <p class="project-impact" data-i18n="projects.p2.impact">
+                Runs on a Raspberry Pi in two Docker containers – no
+                third-party data providers.
               </p>
               <div class="project-tech">
-                <span class="tech-badge">Power BI</span>
-                <span class="tech-badge">Excel</span>
-                <span class="tech-badge">KPI</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Next.js</span>
+                <span class="tech-badge">SQLite</span>
+                <span class="tech-badge">Docker</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Kacperpe/KongresTrading"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.code"
+                  >Code</a
+                >
               </div>
             </div>
           </article>
@@ -135,47 +157,142 @@
           <article class="project-card">
             <div class="project-number" aria-hidden="true">03</div>
             <div class="project-content">
-              <h3 data-i18n="projects.item3.title">Waste Management Model</h3>
-              <p data-i18n="projects.item3.desc">
-                Development of a segregation and transfer model, including
-                documentation and implementation timeline.
+              <h3>GraDron FPV</h3>
+              <p data-i18n="projects.p3.desc">
+                FPV drone simulator in the browser: acro physics, a 12-gate
+                race track with timing and two large mission maps – a seaport
+                and an alpine valley.
               </p>
-              <p class="project-impact" data-i18n="projects.item3.impact">
-                Improved waste traceability and clarified responsibilities per
-                process stream.
+              <p class="project-impact" data-i18n="projects.p3.impact">
+                Runs offline from a single HTML file, with keyboard and Xbox
+                gamepad support.
               </p>
               <div class="project-tech">
-                <span class="tech-badge">BDO</span>
-                <span class="tech-badge">Compliance</span>
-                <span class="tech-badge" data-i18n="projects.item3.badge3"
-                  >Planning</span
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">three.js</span>
+                <span class="tech-badge">WebGL</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://gradron-fpv.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.demo"
+                  >Live demo</a
+                >
+                <a
+                  href="https://github.com/Kacperpe/gradron-fpv"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.code"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number" aria-hidden="true">04</div>
+            <div class="project-content">
+              <h3>Blotsignal</h3>
+              <p data-i18n="projects.p4.desc">
+                Private Android messenger that works without any server.
+                Messages are end-to-end encrypted with the Signal Protocol and
+                sent directly over the local network; contacts pair by QR code.
+              </p>
+              <p class="project-impact" data-i18n="projects.p4.impact">
+                Offline message queue with automatic retry once devices
+                reconnect.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Dart</span>
+                <span class="tech-badge">Kotlin</span>
+                <span class="tech-badge">Signal Protocol</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Kacperpe/Blothsignal"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.code"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number" aria-hidden="true">05</div>
+            <div class="project-content">
+              <h3>MT5 &amp; cTrader Monitor</h3>
+              <p data-i18n="projects.p5.desc">
+                Real-time dashboard for MetaTrader 5 and cTrader trading
+                accounts: balance, open positions, equity curve and a monthly
+                P&amp;L calendar.
+              </p>
+              <p class="project-impact" data-i18n="projects.p5.impact">
+                Full performance statistics – win rate, profit factor, Sharpe
+                ratio and drawdown.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">OAuth2</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Kacperpe/StockMarketCalendar"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.code"
+                  >Code</a
                 >
               </div>
             </div>
           </article>
 
           <article class="project-card project-card--wide">
-            <div class="project-number" aria-hidden="true">04</div>
+            <div class="project-number" aria-hidden="true">06</div>
             <div class="project-content">
-              <h3 data-i18n="projects.item4.title">
-                Compliance Reporting Sprint
-              </h3>
-              <p data-i18n="projects.item4.desc">
-                Short-cycle improvement project focused on monthly environmental
-                reporting consistency and turnaround.
-              </p>
-              <p class="project-impact" data-i18n="projects.item4.impact">
-                Reduced report preparation friction by introducing templates and
-                role-based ownership.
+              <h3>Weather for Bikers</h3>
+              <p data-i18n="projects.p6.desc">
+                Web app for checking the weather along a cycling route, so you
+                know what to expect before and during the ride.
               </p>
               <div class="project-tech">
-                <span class="tech-badge">Templates</span>
-                <span class="tech-badge">Workflow</span>
-                <span class="tech-badge">QA</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Next.js</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://weatherforbikers.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.demo"
+                  >Live demo</a
+                >
+                <a
+                  href="https://github.com/Kacperpe/weatherforbikers"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-i18n="projects.link.code"
+                  >Code</a
+                >
               </div>
             </div>
           </article>
         </div>
+
+        <p class="projects-more">
+          <a
+            href="https://github.com/Kacperpe"
+            target="_blank"
+            rel="noreferrer"
+            data-i18n="projects.more"
+            >All repositories on GitHub</a
+          >
+        </p>
       </section>
     </main>
 
