@@ -98,7 +98,7 @@ const TRANSLATIONS = {
     "projects.heading":
       "Selected Projects",
     "projects.intro":
-      "Client work and side projects – from production web apps to GIS tooling, data pipelines and mobile apps.",
+      "Client work and side projects – from production web apps to AI tools and browser games.",
     "projects.link.code":
       "Code",
     "projects.link.demo":
@@ -122,18 +122,10 @@ const TRANSLATIONS = {
     "projects.p3.impact":
       "Recordings can also be imported straight from Google Drive.",
     "projects.p4.desc":
-      "QGIS 3 plugin that adds an AI chat panel aware of the current project – layers, CRS, selection and fields. The assistant runs GIS operations and writes PyQGIS code that executes only after user approval.",
-    "projects.p4.impact":
-      "Works with 7 AI providers, including local models via LM Studio.",
-    "projects.p5.desc":
       "FPV drone simulator in the browser: acro physics, a 12-gate race track with timing and two large mission maps – a seaport and an alpine valley.",
-    "projects.p5.impact":
+    "projects.p4.impact":
       "Runs offline from a single HTML file, with keyboard and Xbox gamepad support.",
-    "projects.p6.desc":
-      "Private Android messenger that works without any server. Messages are end-to-end encrypted with the Signal Protocol and sent directly over the local network; contacts pair by QR code.",
-    "projects.p6.impact":
-      "Offline message queue with automatic retry once devices reconnect.",
-    "projects.p7.desc":
+    "projects.p5.desc":
       "Web app for checking the weather along a cycling route, so you know what to expect before and during the ride.",
   },
   pl: {
@@ -221,7 +213,7 @@ const TRANSLATIONS = {
     "projects.heading":
       "Wybrane projekty",
     "projects.intro":
-      "Projekty dla klientów i własne – od produkcyjnych aplikacji webowych, przez narzędzia GIS i przetwarzanie danych, po aplikacje mobilne.",
+      "Projekty dla klientów i własne – od produkcyjnych aplikacji webowych, po narzędzia AI i gry w przeglądarce.",
     "projects.link.code":
       "Kod",
     "projects.link.demo":
@@ -245,18 +237,10 @@ const TRANSLATIONS = {
     "projects.p3.impact":
       "Nagrania można też importować bezpośrednio z Google Drive.",
     "projects.p4.desc":
-      "Wtyczka do QGIS 3 z panelem czatu AI, który zna bieżący projekt – warstwy, układ współrzędnych, zaznaczenie i pola. Asystent wykonuje operacje GIS i pisze kod PyQGIS uruchamiany dopiero po akceptacji użytkownika.",
-    "projects.p4.impact":
-      "Obsługuje 7 dostawców AI, w tym modele lokalne przez LM Studio.",
-    "projects.p5.desc":
       "Symulator drona FPV w przeglądarce: fizyka acro, tor wyścigowy z 12 bramkami i pomiarem czasu oraz dwie duże mapy misyjne – port i dolina górska.",
-    "projects.p5.impact":
+    "projects.p4.impact":
       "Działa offline z jednego pliku HTML, obsługuje klawiaturę i pada Xbox.",
-    "projects.p6.desc":
-      "Prywatny komunikator na Androida działający bez serwera. Wiadomości są szyfrowane end-to-end protokołem Signal i przesyłane bezpośrednio w sieci lokalnej; kontakty paruje się kodem QR.",
-    "projects.p6.impact":
-      "Kolejka wiadomości offline z automatycznym ponawianiem po ponownym połączeniu.",
-    "projects.p7.desc":
+    "projects.p5.desc":
       "Aplikacja webowa do sprawdzania pogody na trasie rowerowej – wiesz, czego się spodziewać przed jazdą i w jej trakcie.",
   },
 };
